@@ -1,7 +1,8 @@
+---
 version: '2'
 
 services:
-  zookeeper: 1
+  zookeeper: 
     image: confluentinc/cp-zookeeper:6.0.0
     hostname: zookeeper
     container_name: zookeeper
@@ -11,7 +12,7 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
-  kafka: 2
+  kafka: 
     image: confluentinc/cp-enterprise-kafka:6.0.0
     hostname: kafka
     container_name: kafka
